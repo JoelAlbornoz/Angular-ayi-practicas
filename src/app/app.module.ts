@@ -7,6 +7,9 @@ import { ContenedorComponent } from './components/containers/contenedor/contened
 import { PuntoComponent } from './components/views/punto/punto.component';
 import { LayoutComponent } from './components/containers/layout/layout.component';
 import { ScontenedorComponent } from './components/containers/scontenedor/scontenedor.component';
+import { LayoutpipeComponent } from './components/containers/layoutpipe/layoutpipe.component';
+import { PipeJuevesComponent } from './components/views/pipe-jueves/pipe-jueves.component';
+
 
 @NgModule({
   declarations: [
@@ -15,6 +18,8 @@ import { ScontenedorComponent } from './components/containers/scontenedor/sconte
     PuntoComponent,
     LayoutComponent,
     ScontenedorComponent,
+    LayoutpipeComponent,
+    PipeJuevesComponent,
     
   ],
   imports: [
