@@ -1,1 +1,6 @@
-<p>pipe-jueves works!</p>
+
+<p>Post:</p>
+<p>User id: {{(this.posts | async).userId }}</p>
+<p>id: {{(this.posts | async).id }}</p>
+<p>title : {{(this.posts | async).title }}</p>
+<p>body : {{(this.posts | async).body }}</p>

@@ -1,15 +1,26 @@
 import { Component, OnInit } from '@angular/core';
-
+import { PostsService } from '../../../services/posts.service'
+import { Observable } from 'rxjs';
+import { User } from './user';
 @Component({
   selector: 'app-pipe-jueves',
   templateUrl: './pipe-jueves.component.html',
   styleUrls: ['./pipe-jueves.component.css']
 })
 export class PipeJuevesComponent implements OnInit {
+  posts:Observable<User>= new Observable(subscriber => {
+    subscriber.next({id:1,title:'placeholder',body:'placeholder',userId:"1"});
+  });
+ 
 
-  constructor() { }
+  constructor(private postsService: PostsService ) { 
+
+    this.posts = postsService.getPostsObserver();
+    
+  }
 
   ngOnInit(): void {
+    
   }
 
 }

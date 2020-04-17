@@ -9,6 +9,7 @@ import { LayoutComponent } from './components/containers/layout/layout.component
 import { ScontenedorComponent } from './components/containers/scontenedor/scontenedor.component';
 import { LayoutpipeComponent } from './components/containers/layoutpipe/layoutpipe.component';
 import { PipeJuevesComponent } from './components/views/pipe-jueves/pipe-jueves.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -20,13 +21,14 @@ import { PipeJuevesComponent } from './components/views/pipe-jueves/pipe-jueves.
     ScontenedorComponent,
     LayoutpipeComponent,
     PipeJuevesComponent,
-    
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, HttpClient]
 })
 export class AppModule { }

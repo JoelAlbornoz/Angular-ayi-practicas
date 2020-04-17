@@ -6,7 +6,7 @@ import { LayoutpipeComponent } from './components/containers/layoutpipe/layoutpi
 
 
 const routes: Routes = [{path:'',component:LayoutComponent},
-                        {path:'pipes',component:LayoutpipeComponent},];
+                        {path:'pipes',component:LayoutpipeComponent}];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
