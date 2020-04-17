@@ -10,7 +10,8 @@ import { ScontenedorComponent } from './components/containers/scontenedor/sconte
 import { LayoutpipeComponent } from './components/containers/layoutpipe/layoutpipe.component';
 import { PipeJuevesComponent } from './components/views/pipe-jueves/pipe-jueves.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-
+import { LocalStorageViernesComponent } from './components/views/local-storage-viernes/local-storage-viernes.component';
+import {FormsModule} from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -21,12 +22,14 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     ScontenedorComponent,
     LayoutpipeComponent,
     PipeJuevesComponent,
+    LocalStorageViernesComponent,
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent, HttpClient]
