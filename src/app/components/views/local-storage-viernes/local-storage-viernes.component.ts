@@ -12,9 +12,12 @@ export class LocalStorageViernesComponent implements OnInit {
   ngOnInit(): void {
     this.name = localStorage.getItem('name')
   }
+
+
   saveLocalName(){
     localStorage.setItem('name', this.name)
   };
+
   deleteLocalName(){
     localStorage.removeItem('name')
     this.name = ''

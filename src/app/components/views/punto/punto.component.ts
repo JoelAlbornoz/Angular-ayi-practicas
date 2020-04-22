@@ -3,7 +3,7 @@ import { Component, OnInit, Input, AfterContentChecked, ContentChild } from '@an
 @Component({
   selector: 'app-punto',
   templateUrl: './punto.component.html',
-  styleUrls: ['./punto.component.css']
+  styleUrls: ['./punto.component.scss']
 })
 export class PuntoComponent implements OnInit {
   @Input() x: number;

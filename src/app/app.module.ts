@@ -11,7 +11,8 @@ import { LayoutpipeComponent } from './components/containers/layoutpipe/layoutpi
 import { PipeJuevesComponent } from './components/views/pipe-jueves/pipe-jueves.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { LocalStorageViernesComponent } from './components/views/local-storage-viernes/local-storage-viernes.component';
-import {FormsModule} from '@angular/forms'
+import {FormsModule} from '@angular/forms';
+import { ObservablesMartesComponent } from './components/views/observables-martes/observables-martes.component'
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import {FormsModule} from '@angular/forms'
     LayoutpipeComponent,
     PipeJuevesComponent,
     LocalStorageViernesComponent,
+    ObservablesMartesComponent,
 
   ],
   imports: [
