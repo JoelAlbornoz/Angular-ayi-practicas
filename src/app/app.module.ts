@@ -12,7 +12,8 @@ import { PipeJuevesComponent } from './components/views/pipe-jueves/pipe-jueves.
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { LocalStorageViernesComponent } from './components/views/local-storage-viernes/local-storage-viernes.component';
 import {FormsModule} from '@angular/forms';
-import { ObservablesMartesComponent } from './components/views/observables-martes/observables-martes.component'
+import { ObservablesMartesComponent } from './components/views/observables-martes/observables-martes.component';
+import { FlexboxComponent } from './components/views/flexbox/flexbox.component'
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { ObservablesMartesComponent } from './components/views/observables-marte
     PipeJuevesComponent,
     LocalStorageViernesComponent,
     ObservablesMartesComponent,
+    FlexboxComponent,
 
   ],
   imports: [

@@ -4,7 +4,7 @@ import { fromEvent, } from 'rxjs'
 @Component({
   selector: 'app-contenedor',
   templateUrl: './contenedor.component.html',
-  styleUrls: ['./contenedor.component.css']
+  styleUrls: ['./contenedor.component.scss']
 })
 
 

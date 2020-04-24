@@ -5,7 +5,7 @@ import { User } from './user';
 @Component({
   selector: 'app-pipe-jueves',
   templateUrl: './pipe-jueves.component.html',
-  styleUrls: ['./pipe-jueves.component.css']
+  styleUrls: ['./pipe-jueves.component.scss']
 })
 export class PipeJuevesComponent implements OnInit {
   posts:Observable<User>= new Observable(subscriber => {
@@ -16,7 +16,7 @@ export class PipeJuevesComponent implements OnInit {
   constructor(private postsService: PostsService ) { 
 
     this.posts = postsService.getPostsObserver();
-    
+    postsService.getThumbnailsArray() 
   }
 
   ngOnInit(): void {

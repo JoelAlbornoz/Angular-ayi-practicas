@@ -15,4 +15,14 @@ export class PostsService {
     return this.http.get('https://jsonplaceholder.typicode.com/posts/1')
   }
 
+  getThumbnailsArray(){
+    let result = []
+    this.http.get('https://jsonplaceholder.typicode.com/albums/1/photos').subscribe((response:any)=>{
+      response.forEach(element => {
+        result.push(element.thumbnailUrl)
+      });
+    })
+    return result
+  }
+
 }

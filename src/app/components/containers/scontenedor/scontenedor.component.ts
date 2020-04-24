@@ -4,7 +4,7 @@ import { PuntoComponent } from '../../views/punto/punto.component';
 @Component({
   selector: 'app-scontenedor',
   templateUrl: './scontenedor.component.html',
-  styleUrls: ['./scontenedor.component.css']
+  styleUrls: ['./scontenedor.component.scss']
 })
 export class ScontenedorComponent implements OnInit , AfterViewChecked{
   @ViewChild(PuntoComponent) referencia:PuntoComponent;

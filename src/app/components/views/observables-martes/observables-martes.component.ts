@@ -5,7 +5,7 @@ import { map, take } from 'rxjs/operators';
 @Component({
   selector: 'app-observables-martes',
   templateUrl: './observables-martes.component.html',
-  styleUrls: ['./observables-martes.component.css']
+  styleUrls: ['./observables-martes.component.scss']
 })
 export class ObservablesMartesComponent implements OnInit {
   letras  = ['a','b','c','d','e'];

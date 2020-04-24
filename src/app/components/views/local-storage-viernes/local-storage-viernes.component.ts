@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-local-storage-viernes',
   templateUrl: './local-storage-viernes.component.html',
-  styleUrls: ['./local-storage-viernes.component.css']
+  styleUrls: ['./local-storage-viernes.component.scss']
 })
 export class LocalStorageViernesComponent implements OnInit {
   name=''
